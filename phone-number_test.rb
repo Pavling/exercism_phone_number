@@ -9,7 +9,6 @@ class PhoneNumberTest < MiniTest::Unit::TestCase
   end
 
   def test_cleans_number_with_dots
-    skip
     number = PhoneNumber.new("123.456.7890").number
     assert_equal "1234567890", number
   end
