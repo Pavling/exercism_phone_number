@@ -14,7 +14,6 @@ class PhoneNumberTest < MiniTest::Unit::TestCase
   end
 
   def test_valid_when_11_digits_and_first_is_1
-    skip
     number = PhoneNumber.new("11234567890").number
     assert_equal "1234567890", number
   end
