@@ -5,6 +5,10 @@ class PhoneNumber
     clean_number(value)
   end
 
+  def area_code
+    @number[0..2]
+  end
+
   private
   def clean_number(value)
     @number = value.to_s
