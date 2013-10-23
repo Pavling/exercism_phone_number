@@ -9,6 +9,10 @@ class PhoneNumber
     @number[0..2]
   end
 
+  def to_s
+    "(#{area_code}) #{@number[3..5]}-#{@number[6..9]}"
+  end
+
   private
   def clean_number(value)
     @number = value.to_s

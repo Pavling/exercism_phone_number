@@ -34,13 +34,11 @@ class PhoneNumberTest < MiniTest::Unit::TestCase
   end
 
   def test_pretty_print
-    skip
     number = PhoneNumber.new("1234567890")
     assert_equal "(123) 456-7890", number.to_s
   end
 
   def test_pretty_print_with_full_us_phone_number
-    skip
     number = PhoneNumber.new("11234567890")
     assert_equal "(123) 456-7890", number.to_s
   end
