@@ -24,7 +24,7 @@ class PhoneNumber
 
   private
   def pop_one_off_eleven_digits
-    @number[0] = '' if @number.size == 11 && number[0] == '1'
+    @number.sub!(/^./,'') if @number.size == 11 && number[0] == '1'
   end
 
   private
